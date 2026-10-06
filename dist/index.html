@@ -188,47 +188,7 @@
     .section-heading p { color: var(--muted); font-size: 1.05rem; }
     .section-kicker { color: var(--pink-dark); font-size: .78rem; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; }
 
-    .payment-zone {
-      position: relative;
-      overflow: hidden;
-      border-block: 1px solid transparent;
-    }
-    .payment-zone::after {
-      content: "";
-      position: absolute;
-      z-index: 0;
-      width: 300px;
-      aspect-ratio: 1;
-      right: -140px;
-      top: -140px;
-      border-radius: 50%;
-      opacity: .45;
-      pointer-events: none;
-    }
-    .payment-zone > .shell { position: relative; z-index: 1; }
-    .payment-esewa {
-      border-color: rgba(80, 158, 45, .16);
-      background: linear-gradient(135deg, #f1fce9 0%, #fbfff8 55%, #e8f8df 100%);
-    }
-    .payment-esewa::after { background: radial-gradient(circle, rgba(90, 188, 57, .32), transparent 68%); }
-    .payment-bank {
-      border-color: rgba(237, 36, 96, .15);
-      background: linear-gradient(135deg, #fff0f6 0%, #fffafd 54%, #ffe3ed 100%);
-    }
-    .payment-bank::after { background: radial-gradient(circle, rgba(237, 36, 96, .25), transparent 68%); }
-    .payment-paypal {
-      border-color: rgba(20, 118, 168, .16);
-      background: linear-gradient(135deg, #eef8ff 0%, #fbfdff 55%, #deefff 100%);
-    }
-    .payment-paypal::after { background: radial-gradient(circle, rgba(18, 117, 217, .25), transparent 68%); }
-    .payment-zone .section-kicker {
-      display: inline-flex;
-      padding: .42rem .7rem;
-      border: 1px solid rgba(255, 255, 255, .8);
-      border-radius: 99px;
-      background: rgba(255, 255, 255, .78);
-      box-shadow: 0 7px 20px rgba(65, 22, 40, .06);
-    }
+    .payment-zone { position: relative; background: transparent; }
 
     .donation-card {
       position: relative;
