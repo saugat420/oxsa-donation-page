@@ -207,6 +207,16 @@
     .donation-card::before { content: ""; position: absolute; inset: 0 0 auto; height: 6px; background: var(--pink); }
     .payment-esewa .donation-card::before { background: #58b533; }
     .payment-paypal .donation-card::before { background: linear-gradient(90deg, #07388e, #1288e8); }
+    .payment-esewa .donation-card {
+      border-color: rgba(70, 151, 36, .28);
+      background: linear-gradient(135deg, #fbfff8 0%, #f0fae9 100%);
+    }
+    .payment-paypal .donation-card {
+      border-color: rgba(20, 103, 181, .25);
+      background: linear-gradient(135deg, #fbfdff 0%, #edf6ff 100%);
+    }
+    .payment-esewa .detail-row { border: 1px solid #dcefd2; background: rgba(255, 255, 255, .84); }
+    .payment-paypal .detail-row { border: 1px solid #d8e9f8; background: rgba(255, 255, 255, .86); }
     .donation-card:hover { transform: translateY(-5px); box-shadow: 0 30px 72px rgba(76, 22, 44, .2); }
     .method-title { display: flex; align-items: center; gap: .8rem; margin-bottom: 1.4rem; }
     .method-icon { width: 58px; aspect-ratio: 1; display: grid; place-items: center; overflow: hidden; border-radius: 17px; background: var(--pink-soft); animation: icon-breathe 3.6s ease-in-out infinite; }
@@ -258,8 +268,19 @@
       transition: transform .28s ease, box-shadow .28s ease;
     }
     .bank-card:hover { transform: translateY(-4px); box-shadow: 0 24px 55px rgba(90, 27, 52, .17); }
-    .bank-stack .bank-card:first-child { border-top-color: #1eaa78; }
-    .bank-stack .bank-card:nth-child(2) { border-top-color: #264d9e; }
+    .bank-stack .bank-card:first-child {
+      border-color: rgba(30, 170, 120, .28);
+      border-top-color: #1eaa78;
+      background: linear-gradient(145deg, #fbfffd 0%, #eaf8f2 100%);
+    }
+    .bank-stack .bank-card:nth-child(2) {
+      border-color: rgba(38, 77, 158, .25);
+      border-top-color: #264d9e;
+      background: linear-gradient(145deg, #fcfdff 0%, #edf2ff 100%);
+    }
+    .bank-stack .bank-card:first-child .detail-row { border: 1px solid #d7eee5; background: rgba(255, 255, 255, .85); }
+    .bank-stack .bank-card:nth-child(2) .detail-row { border: 1px solid #dce4f6; background: rgba(255, 255, 255, .87); }
+    .bank-qr { background: linear-gradient(145deg, #fff 0%, #fff4f8 100%); }
     .bank-card h3 { margin-bottom: .25rem; font-size: 1.45rem; }
     .bank-card > p { color: var(--muted); margin-bottom: 1.2rem; }
     .bank-qr { align-self: stretch; display: grid; align-content: center; }
